@@ -1,1 +1,1 @@
-# magic-digits
+A small number guessing game.
