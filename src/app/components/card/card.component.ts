@@ -48,7 +48,6 @@ export class CardComponent implements OnInit {
             this.currentCard = this.cards[this.currentCardIndex];
         } else {
             const magicNumber = this.calculateNumber(this.selectedCards);
-            console.log(this.selectedCards);
             this.router.navigate(['/result'], {
                 state: { magicNumber }
             });

@@ -18,7 +18,7 @@ strong {
 }
 
 .number-section {
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 
 .number {
@@ -48,4 +48,17 @@ strong {
     cursor: pointer;
     background: #1C1C1C;
     color: #A6D608;
+}
+
+.confetti-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    /* Important: allows clicks to pass through */
+    z-index: 9999;
+    /* Make sure it's on top but not blocking */
+    background: transparent;
 }

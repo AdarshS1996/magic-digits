@@ -6,7 +6,7 @@
         <div class="col-12 guessed-number">
             <span>Guessed number is</span>
         </div>
-        <div class="col-12">
+        <div class="col-12 number-section" (click)="confettiCelebration()">
             <span class="number">{{magicNumber}}</span>
         </div>
     </div>
@@ -35,3 +35,5 @@
     </div>
 
 </div>
+
+<canvas id="confetti-canvas" class="confetti-canvas"></canvas>
