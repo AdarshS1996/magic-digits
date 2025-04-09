@@ -1,0 +1,51 @@
+.col-12 {
+    text-align: -webkit-center;
+}
+
+.result-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+span {
+    font-size: 22px;
+}
+
+strong {
+    font-size: 28px;
+}
+
+.number-section {
+    margin-bottom: 16px;
+}
+
+.number {
+    font-size: 152px;
+}
+
+.sad-face {
+    font-size: 200px;
+    margin-bottom: 36px;
+}
+
+.invalid-number {
+    margin-bottom: 24px;
+}
+
+.think-number {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.replay-icon {
+    border-radius: 50%;
+    border: 1px solid #1C1C1C;
+    padding: 24px;
+    font-size: 54px;
+    cursor: pointer;
+    background: #1C1C1C;
+    color: #A6D608;
+}

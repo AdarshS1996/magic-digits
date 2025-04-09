@@ -1,0 +1,71 @@
+.left-top,
+.right-top {
+    position: absolute;
+    top: 25px;
+    font-size: 54px;
+    cursor: pointer;
+}
+
+.left-top {
+    left: 25px;
+}
+
+.right-top {
+    right: 25px;
+}
+
+.game-logo-abbr {
+    background-image: url('../../../assets/logo-abbr.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 37px;
+    justify-self: anchor-center;
+    height: 30px;
+    width: 49px;
+    cursor: pointer;
+}
+
+.modal {
+    background: rgba($color: #1C1C1C, $alpha: 0.1);
+    backdrop-filter: blur(3px);
+}
+
+.modal-dialog {
+    background: none;
+}
+
+.modal-content {
+    border-radius: 16px;
+}
+
+ul {
+    margin-bottom: 0px;
+}
+
+.modal-header {
+    justify-content: space-between;
+    border-bottom: none;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.modal-header-info,
+.modal-header-close {
+    font-size: 54px;
+}
+
+.modal-header-close {
+    cursor: pointer;
+}
+
+.modal-footer {
+    background-color: #A6D608;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-top: none;
+    padding: 14px;
+    font-weight: bold;
+    justify-content: center;
+}

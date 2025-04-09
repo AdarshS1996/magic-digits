@@ -1,0 +1,29 @@
+.col-12 {
+    text-align: -webkit-center;
+}
+
+.game-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.game-logo {
+    background-image: url('../../../assets/logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 318px;
+    margin-bottom: 100px;
+}
+
+.play-icon {
+    border-radius: 50%;
+    padding: 24px;
+    font-size: 54px;
+    cursor: pointer;
+    background: #1C1C1C;
+    color: #A6D608;
+}

@@ -1,0 +1,45 @@
+<app-header [leftIcon]="'home'" [rightIcon]="'replay'" [showCenterLogo]="true"></app-header>
+
+<div class="container game-section">
+
+    <div class="row">
+        <div class="col-12">
+            <div class="current-card">Card <strong>{{ currentCardIndex + 1 }}</strong> of <strong>7</strong></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card" *ngIf="currentCard">
+                <div class="card-body number-grid">
+                    <span *ngFor="let number of currentCard" class="">
+                        {{ number }}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-6">
+            <button type="button" class="btn btn-primary yes-button" (click)="cardSelected(true)">
+                <span class="material-symbols-outlined yes-icon">
+                    check
+                </span>
+                It's Here!
+            </button>
+        </div>
+
+        <div class="col-6">
+            <button type="button" class="btn btn-primary no-button" (click)="cardSelected(false)">
+                <span class="material-symbols-outlined no-icon">
+                    close
+                </span>
+                Nope!
+            </button>
+        </div>
+
+    </div>
+
+</div>

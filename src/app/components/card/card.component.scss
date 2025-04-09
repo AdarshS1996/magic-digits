@@ -1,0 +1,100 @@
+.game-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.col-6,
+.col-12 {
+    justify-items: center;
+}
+
+.current-card {
+    font-size: 18px;
+}
+
+strong {
+    font-size: 24px;
+}
+
+.card {
+    border: 1px solid #1C1C1C;
+    margin-top: 16px;
+    margin-bottom: 52px;
+    border-radius: 16px;
+}
+
+.card-body {
+    border-radius: 16px;
+}
+
+.number-grid {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(5, minmax(15vw, 1fr));
+}
+
+.yes-button,
+.no-button {
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    border: 1px solid #1C1C1C;
+}
+
+.yes-icon,
+.no-icon {
+    font-size: 36px;
+    background-color: transparent;
+    color: #A6D608;
+}
+
+.yes-button:hover,
+.no-button:hover {
+    background: #A6D608;
+    color: #1C1C1C;
+    border: 1px solid #1C1C1C;
+}
+
+.yes-button:hover .yes-icon,
+.no-button:hover .no-icon {
+    background: transparent;
+    color: #1C1C1C;
+    transition: color .15s ease-in-out,
+        background-color .15s ease-in-out,
+        border-color .15s ease-in-out,
+        box-shadow .15s ease-in-out;
+}
+
+@media screen and (min-width: 668px) {
+    .number-grid {
+        grid-template-columns: repeat(6, minmax(14vw, 1fr));
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .number-grid {
+        grid-template-columns: repeat(6, minmax(13vw, 1fr));
+    }
+}
+
+@media screen and (min-width: 868px) {
+    .number-grid {
+        grid-template-columns: repeat(6, minmax(10vw, 1fr));
+    }
+}
+
+@media screen and (min-width: 1068px) {
+    .number-grid {
+        grid-template-columns: repeat(6, minmax(8vw, 1fr));
+    }
+}
+
+@media screen and (min-width: 1268px) {
+    .number-grid {
+        grid-template-columns: repeat(6, minmax(7vw, 1fr));
+    }
+}

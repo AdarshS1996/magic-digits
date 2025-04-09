@@ -1,0 +1,39 @@
+.col-12 {
+    text-align: -webkit-center;
+}
+
+.intro-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.think-number {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.margin-bottom {
+    margin-bottom: 52px;
+}
+
+span {
+    font-size: 22px;
+}
+
+strong {
+    font-size: 28px;
+}
+
+.lets-play-icon {
+    border-radius: 50%;
+    border: 1px solid #1C1C1C;
+    padding: 24px;
+    font-size: 54px;
+    cursor: pointer;
+    background: #1C1C1C;
+    color: #A6D608;
+}

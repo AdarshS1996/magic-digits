@@ -1,0 +1,41 @@
+<div>
+    <div class="material-symbols-outlined left-top" *ngIf="!isLeftHidden" (click)="onLeftButtonClick()">{{leftIcon}}
+    </div>
+    <div class="game-logo-abbr" *ngIf="showCenterLogo" (click)="onCenterButtonClick()"></div>
+    <div id="right-button" class="material-symbols-outlined right-top" *ngIf="!isRightHidden && isInfoIcon"
+        data-bs-toggle="modal" data-bs-target="#myModal">{{rightIcon}}</div>
+    <div id="right-button" class="material-symbols-outlined right-top" *ngIf="!isRightHidden && !isInfoIcon"
+        (click)="onRightButtonClick()">{{rightIcon}}</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <span class="material-symbols-outlined modal-header-info">
+                    info
+                </span>
+                <span class="material-symbols-outlined modal-header-close" data-bs-dismiss="modal">
+                    close
+                </span>
+            </div>
+
+            <div class="modal-body">
+                <ul>
+                    <li>You have to think of a number between 1 and 100</li>
+                    <li>We’ll show you 7 cards</li>
+                    <li>Just tell us if your number is present in each card</li>
+                    <li>At the end, we’ll magically guess your number!</li>
+                    <li>Just tell us if your number is present in each card</li>
+                </ul>
+            </div>
+
+            <div class="modal-footer">
+                <div>~ Created by Adarsh Srivastava ~</div>
+            </div>
+
+        </div>
+    </div>
+</div>

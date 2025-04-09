@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+*, body {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #A6D608;
+    color: #1C1C1C;
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    background: #1C1C1C;
+    border: none;
+    display: flex;
+    align-items: center;
+    width: 170px;
+    padding: 16px;
+    font-size: 20px;
+    color: #A6D608;
+    border-radius: 16px;
+}

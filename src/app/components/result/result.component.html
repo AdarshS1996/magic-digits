@@ -1,0 +1,37 @@
+<app-header [isRightHidden]="true" [leftIcon]="'home'" [showCenterLogo]="true"></app-header>
+
+<div class="container result-section">
+
+    <div class="row" *ngIf="!isInvalidNumber">
+        <div class="col-12 guessed-number">
+            <span>Guessed number is</span>
+        </div>
+        <div class="col-12">
+            <span class="number">{{magicNumber}}</span>
+        </div>
+    </div>
+
+    <div class="row" *ngIf="isInvalidNumber">
+        <div class="col-12 invalid-number">
+            <span>You have selected an invalid number.</span>
+        </div>
+        <div class="col-12 think-number">
+            <span>Please select a number between</span>
+            <span><strong>1</strong> and <strong>100</strong></span>
+        </div>
+        <div class="col-12">
+            <span class="material-symbols-outlined sad-face">
+                sentiment_dissatisfied
+            </span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="material-symbols-outlined replay-icon" (click)="goToIntroPage()">
+                replay
+            </div>
+        </div>
+    </div>
+
+</div>
