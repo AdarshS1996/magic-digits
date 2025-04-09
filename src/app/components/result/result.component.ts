@@ -34,7 +34,7 @@ export class ResultComponent implements OnInit {
         }
     }
 
-    confettiCelebration(): void {
+    public confettiCelebration(): void {
         const myCanvas = document.getElementById('confetti-canvas') as HTMLCanvasElement;
         const confettiInstance = confetti.create(myCanvas, { resize: true });
         confettiInstance({
